@@ -1,9 +1,18 @@
-# Nordic nRF52 DK · Zephyr
-
-- INHERITS [Nordic nRF52 Development Kit](../elements/nordic/nrf52-dk.md)
-
-- Software stack: Zephyr
-- nRF Connect SDK: 3.0.2
-- Toolchain: nRF Connect SDK Toolchain 3.0.2
-
-- [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK)
+# Nordic nRF52 DK · Zephyr
+
+- INHERITS [Nordic nRF52 Development Kit](../elements/nordic/nrf52-dk.md)
+
+- Software stack: Zephyr
+- nRF Connect SDK: 3.0.2
+- Toolchain: nRF Connect SDK Toolchain 3.0.2
+- INHERITS [Nordic nRF Connect SDK 3.0.2](../elements/nordic/ncs-3.0.2.md)
+
+- [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK)
+
+## BlueJoule-GATT 26.11 configuration reference
+
+- Nordic toolchain bundle `66cdf9b75e`; sysbuild; external LF crystal configured at 50 ppm; size optimization.
+- [Platform configuration and environment inventory](https://github.com/em-foundation/bluejoule-gatt/tree/RC-26.11/peripheral/platforms/nrf-52832)
+- [Common application and build/load instructions](https://github.com/em-foundation/bluejoule-gatt/tree/RC-26.11/peripheral)
+
+The maintainer built, loaded and observed this baseline working with the reference central on Windows. These links describe the current RC recipe; they do not retroactively change the configuration of older captures. Exact capture attribution should retain source/module revisions and published firmware provenance. Secure GATT is not implied by this ordinary GATT baseline.
